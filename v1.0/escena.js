@@ -1,28 +1,34 @@
-import { dialogos } from "./recursos"
-
 export class Escena{
 
     #localizacion = null
     #dialogo = null
-    //#fondo = null
+    #fondo = null
 
-    constructor(localizacion=null, dialogo=null /*fondo=null*/)
+    constructor(localizacion=null, dialogo=null, fondo=null)
     {
         this.#localizacion = localizacion
         this.#dialogo= dialogo
-        /*this.#fondo= fondo*/
+        this.#fondo= fondo
     }
 
     iniciarEscena()       
     {
-        let imagenfondo = document.createElement("img");
-        imagenfondo.src = "imagenes/escena1.jpg";
+        /*
+        imagen = document.createElement("img");
+        imagen.src = "imagenes/esc2.png";*/
+
+        document.body.style.backgroundImage = `url(${this.#fondo})`;
 
         // document.getElementById("dialog-text").innerHTML += imagenfondo.outerHTML;
-        document.getElementById("dialog-text").innerHTML+=dialogos.escena1
+        document.getElementById("dialog-text").innerHTML=this.#dialogo
 
         //cambiar imagen de fondo?
-        let body = document.body;
-        body.style.backgroundImage = "url('imagen/escena1.jpg')";
+        // imagen = document.body;
+        // imagen.style.backgroundImage = fondo;
+    }
+
+    ejecutarDialogos()
+    {
+        
     }
 }

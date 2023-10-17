@@ -10,8 +10,8 @@ export class Personaje{
 
     hablar(texto)
     {
-        let textoV2=this.#nombre+": "+texto+"<br>"
-        document.getElementById("historia").innerHTML += textoV2
+        let textoV2="<strong>"+this.#nombre+"<strong/>"+": "+texto+"<br>"
+        document.getElementById("dialog-text").innerHTML += textoV2
     }
 
 }

@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-image: url('imagenes/esc1.png'); /* Reemplaza 'tu_imagen_de_fondo.jpg' con la URL de tu imagen */
+	background-image: url('imagenes/intro.jpg');
 	background-size: cover;
 	background-position: center;
 	font-family: 'Arial', sans-serif;
@@ -28,4 +28,47 @@ body {
 .dialog-text {
 	font-size: 18px;
 	line-height: 1.5;
+}
+
+.dialog-box button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dialog-box #left {
+    float: left;
+	display: none
+}
+
+.dialog-box #right {
+    float: right;
+	display: none;
+}
+
+.dialog-box #mid {
+    margin: auto;
+}
+
+.dialog-box #reset {
+	display: none;
+    margin: auto;
+}
+
+#reset {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #852929;
+	color: #f9f9f9;
+	width: 100px;
 }
